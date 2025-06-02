@@ -1,0 +1,58 @@
+import random
+
+choice = input(" Bet (10€, 20€, 50€):  €")
+choice2 = input("1. (2-5)\n 2. (6-10)\n 3. (11-12):  ")
+balance = 0
+while True:
+    input("Press ENTER to roll dices")
+    roll = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 90])[0]
+    roll2 = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 90])[0]
+    total = roll + roll2
+    print(f"{roll} + {roll2} = {total}")
+
+    if total <=5 and total >= 2 and choice2 == 1: 
+        print("Nice bet")
+        if choice == 10: 
+            result = balance + 10
+            print(result)
+        elif choice == 20:
+            result == balance + 20
+            print(result)
+        elif choice == 50: 
+            result == balance + 50
+            print(result)
+        
+
+    if total >= 6 and total <= 10 and choice2 == 2: 
+        print("Nice Bet")
+        if choice == 10: 
+            result = balance + 10
+            print(result)
+        elif choice == 20:
+            result == balance + 20
+            print(result)
+        elif choice == 50: 
+            result == balance + 50
+            print(result)
+        
+
+    if total == 11 or total == 12 and choice2 == 3: 
+        print("Nice Bet")
+        if choice == 10: 
+            result = balance + 10
+            print(result)
+        elif choice == 20:
+            result == balance + 20
+            print(result)
+        elif choice == 50: 
+            result == balance + 50
+            print(result)
+
+
+
+
+
+
+    if __name__ == "__main__":
+        print()
+
