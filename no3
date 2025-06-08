@@ -8,8 +8,8 @@ while True:
     
 
     input("Press ENTER to roll dices")
-    roll = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 90])[0]
-    roll2 = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 90])[0]
+    roll = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 1])[0]
+    roll2 = random.choices([1, 2, 3, 4, 5, 6], weights=[1, 1, 1, 1, 1, 1])[0]
     total = roll + roll2
     print(f"{roll} + {roll2} = {total}")
     
