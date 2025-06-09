@@ -10,4 +10,4 @@
 - Python3 
 # How to run it?
 - Open Terminal
-- Type "python3 dice_betting.py"
+- Type "python3 no3"
